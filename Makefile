@@ -1,8 +1,7 @@
 format:
 	@(echo "Formatting HTML files...");
-	@(tidy -config .tidy *.html && \
-		csstidy.exe stylesheets/style.css --sort_properties=true stylesheets/style.css;\
-		if [ $$? -eq 0 ] ; then \
-		echo "> Done.";\
-		else \
-		echo "> Failure!"; fi)2>&1 | grep "^> ";
+	@(node_modules/.bin/html-beautify -r -t -n -q -f *.html)
+	@(echo "Formatting CSS files...")
+	@(node_modules/.bin/css-beautify -r -t -n -q -f stylesheets/*.css)
+	@(echo "Formatting Javascript files...")
+	@(node_modules/.bin/js-beautify -r -t -n -q -f test/*.js)
