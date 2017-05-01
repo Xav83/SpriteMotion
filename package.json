@@ -1,0 +1,31 @@
+{
+  "name": "sprite_motion",
+  "version": "1.0.0",
+  "description": "All the resources come from [The Spriters Resource](https://www.spriters-resource.com/).",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "start": "node_modules/.bin/supervisor app",
+    "test": "node_modules/.bin/mocha"
+  },
+    "devDependencies": {
+    "mocha": "*",
+    "should": ">= 0.0.1",
+    "js-beautify": "*"
+  },
+    "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Xav83/SpriteMotion.git"
+  },
+  "keywords": [
+    "Sprite",
+    "Motion"
+  ],
+  "author": "Xavier Jouvenot",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Xav83/SpriteMotion/issues"
+  },
+  "homepage": "https://github.com/Xav83/SpriteMotion#readme"
+}
