@@ -1,9 +1,13 @@
-window.onload = function() {
-	var canvas = document.getElementById("superMario");
+function loadImageInCanvas(canvas, image) {
 	var canvasContext = canvas.getContext("2d");
-	var superMarioImage = new Image();
-	superMarioImage.addEventListener('load', function() {
-		canvasContext.drawImage(superMarioImage, 0, 0, superMarioImage.width, superMarioImage.height, 0, 0, canvas.width, canvas.height);
+	image.addEventListener('load', function() {
+		canvasContext.drawImage(image, image.x, image.y, image.width, image.height, 0, 0, canvas.width, canvas.height);
 	});
+}
+
+window.onload = function() {
+	var superMarioCanvas = document.getElementById("superMario");
+	var superMarioImage = new Image();
 	superMarioImage.src = "resources/images/NES - Super Mario Bros - Mario & Luigi.png";
+	loadImageInCanvas(superMarioCanvas, superMarioImage);
 };
