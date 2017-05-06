@@ -1,4 +1,6 @@
 [![Build Status](https://travis-ci.org/Xav83/SpriteMotion.svg?branch=master)](https://travis-ci.org/Xav83/SpriteMotion)
+[![Build status](https://ci.appveyor.com/api/projects/status/5hep44jdbpxb3vd3?svg=true)](https://ci.appveyor.com/project/Xav83/spritemotion)
+
 # SpriteMotion
 
 This repository use `npm`, so you need to execute the command `npm install` the first time you clone the project on your computer.
