@@ -4,4 +4,4 @@ format:
 	@(echo "Formatting CSS files...")
 	@(node_modules/.bin/css-beautify -r -t -n -q -f stylesheets/*.css)
 	@(echo "Formatting Javascript files...")
-	@(node_modules/.bin/js-beautify -r -t -n -q -f test/*.js)
+	@(node_modules/.bin/js-beautify -r -t -n -q -f test/*.js javascript/*.js)

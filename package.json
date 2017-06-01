@@ -4,17 +4,17 @@
   "description": "All the resources come from [The Spriters Resource](https://www.spriters-resource.com/).",
   "main": "index.js",
   "dependencies": {},
-  "devDependencies": {},
+  "devDependencies": {
+    "js-beautify": "*",
+    "mocha": "*",
+    "mock-browser": "^0.92.14",
+    "should": ">= 0.0.1"
+  },
   "scripts": {
     "start": "node_modules/.bin/supervisor app",
     "test": "node_modules/.bin/mocha"
   },
-    "devDependencies": {
-    "mocha": "*",
-    "should": ">= 0.0.1",
-    "js-beautify": "*"
-  },
-    "repository": {
+  "repository": {
     "type": "git",
     "url": "git+https://github.com/Xav83/SpriteMotion.git"
   },
