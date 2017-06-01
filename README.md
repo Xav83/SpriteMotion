@@ -8,3 +8,7 @@ This repository use `npm`, so you need to execute the command `npm install` the 
 ## Format
 
 To format the files easily, just use the command `make format` at the root of the repository.
+
+## Production
+
+To see what the current state of the projet, you can go on the [Github Page](https://xav83.github.io/SpriteMotion/) of the project.
